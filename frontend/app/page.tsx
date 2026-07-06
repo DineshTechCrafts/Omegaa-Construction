@@ -1,4 +1,4 @@
-﻿import MainHeader from '@/components/layout/MainHeader';
+import MainHeader from '@/components/layout/MainHeader';
 import Footer from '@/components/layout/Footer';
 import ConstructionBg from '@/components/home/ConstructionBg';
 import WhyChooseOmegaa from '@/components/home/WhyChooseOmegaa';

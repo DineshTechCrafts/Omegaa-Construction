@@ -1,29 +1,27 @@
 # Dependencies
 node_modules/
 frontend/node_modules/
-
-# Next.js
 frontend/.next/
 frontend/out/
 
 # Environment
 .env
 .env.local
-.env*.local
+backend/.env
 frontend/.env.local
+
+# Build output
+backend/bin/
 
 # OS
 .DS_Store
+**/.DS_Store
 Thumbs.db
 __MACOSX/
 
 # Logs
 *.log
-npm-debug.log*
 
-# IDE (keep .cursorrules; ignore local editor state)
+# IDE
 .vscode/
 .idea/
-
-# Build artifacts
-backend/bin/
