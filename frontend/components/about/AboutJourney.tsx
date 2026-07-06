@@ -52,29 +52,30 @@ export default function AboutJourney() {
           <div className="mx-auto mt-4 h-1.5 w-24 rounded-full bg-gold" />
         </div>
 
-        <ol className="relative space-y-0">
-          {journeyTimeline.map((item, index) => (
-            <li key={item.title} className="relative flex gap-6 pb-10 last:pb-0 md:gap-10">
-              {index < journeyTimeline.length - 1 && (
-                <span
-                  className="absolute left-[1.65rem] top-14 bottom-0 w-0.5 rounded-full bg-gradient-to-b from-gold via-[#E8CD82] to-gold/70 shadow-[0_0_6px_rgba(212,175,55,0.35)] md:left-[2.1rem]"
-                  aria-hidden="true"
-                />
-              )}
+        <div className="relative">
+          {/* Continuous vertical timeline line passing through the center of the badges */}
+          <span
+            className="absolute left-[28px] top-[28px] bottom-[28px] w-0.5 rounded-full bg-gradient-to-b from-gold via-[#E8CD82] to-gold/70 shadow-[0_0_6px_rgba(212,175,55,0.35)] md:left-[36px] md:top-[36px] md:bottom-[36px]"
+            aria-hidden="true"
+          />
 
-              <JourneyYearBadge year={item.year} />
+          <ol className="relative space-y-10">
+            {journeyTimeline.map((item) => (
+              <li key={item.title} className="relative flex items-center gap-6 md:gap-10">
+                <JourneyYearBadge year={item.year} />
 
-              <article className="flex-1 rounded-2xl border border-white/80 bg-white/95 p-5 shadow-[0_8px_30px_rgba(15,23,42,0.05)] backdrop-blur-sm transition-shadow duration-300 hover:shadow-[0_12px_35px_rgba(21,46,255,0.08)] md:p-6">
-                <h3 className="text-lg font-semibold text-slate-900 md:text-xl">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm font-light leading-relaxed text-slate-600 md:text-base">
-                  {item.description}
-                </p>
-              </article>
-            </li>
-          ))}
-        </ol>
+                <article className="flex-1 rounded-2xl border border-white/80 bg-white/95 p-5 shadow-[0_8px_30px_rgba(15,23,42,0.05)] backdrop-blur-sm transition-shadow duration-300 hover:shadow-[0_12px_35px_rgba(21,46,255,0.08)] md:p-6">
+                  <h3 className="text-lg font-semibold text-slate-900 md:text-xl">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm font-light leading-relaxed text-slate-600 md:text-base">
+                    {item.description}
+                  </p>
+                </article>
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
   );
