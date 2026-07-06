@@ -31,7 +31,7 @@ export default function AboutFounder() {
                 />
               </div>
               <div className="bg-white px-5 py-4 md:px-6 md:py-5 border-t border-slate-100">
-                <p className="text-lg font-semibold text-slate-900">{founder.name}</p>
+                <p className="whitespace-nowrap text-lg font-semibold text-slate-900">{founder.name}</p>
                 <p className="mt-1 text-sm font-light text-slate-500">
                   Founder, Omegaa Construction
                 </p>

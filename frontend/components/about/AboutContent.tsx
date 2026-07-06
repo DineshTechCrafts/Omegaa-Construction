@@ -1,6 +1,7 @@
 import MainHeader from '@/components/layout/MainHeader';
 import Footer from '@/components/layout/Footer';
 import AboutFounder from '@/components/about/AboutFounder';
+import AboutAssociations from '@/components/about/AboutAssociations';
 import AboutJourney from '@/components/about/AboutJourney';
 import AboutCoreValues from '@/components/about/AboutCoreValues';
 import AboutMissionVision from '@/components/about/AboutMissionVision';
@@ -13,6 +14,7 @@ export default function AboutContent() {
 
       <main className="flex-1">
         <AboutFounder />
+        <AboutAssociations />
         <AboutJourney />
         <AboutCoreValues />
         <AboutMissionVision />

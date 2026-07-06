@@ -71,7 +71,7 @@ export default function PhotoLightbox({
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
-        className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/85 p-4 backdrop-blur-sm sm:p-6"
+        className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/90 p-2 backdrop-blur-sm sm:p-3"
         onClick={onClose}
         role="dialog"
         aria-modal="true"
@@ -82,29 +82,29 @@ export default function PhotoLightbox({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.96, y: 8 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
-          className="relative flex w-full max-w-5xl md:max-w-6xl lg:max-w-7xl h-[80vh] sm:h-[85vh] flex-col overflow-hidden rounded-3xl border border-white/10 bg-white shadow-[0_24px_80px_rgba(0,0,0,0.45)]"
+          className="relative flex w-full max-w-[98vw] h-[96vh] flex-col overflow-hidden rounded-2xl border border-white/10 bg-white shadow-[0_24px_80px_rgba(0,0,0,0.55)]"
           onClick={(event) => event.stopPropagation()}
         >
-          <div className="flex items-center justify-between gap-4 border-b border-slate-200/80 px-4 py-3 sm:px-6 sm:py-4">
+          <div className="flex items-center justify-between gap-4 border-b border-slate-200/80 px-4 py-2 sm:px-6 sm:py-2.5">
             <div className="min-w-0">
-              <p className="truncate text-base font-bold text-slate-900 sm:text-lg">
+              <p className="truncate text-sm font-bold text-slate-900 sm:text-base">
                 {projectName}
               </p>
-              <p className="text-xs font-medium text-slate-500 sm:text-sm">
+              <p className="text-xs font-medium text-slate-500">
                 Photo {activeIndex + 1} of {photos.length}
               </p>
             </div>
             <button
               type="button"
               onClick={onClose}
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition-colors hover:bg-slate-200"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition-colors hover:bg-slate-200"
               aria-label="Close photo viewer"
             >
-              <X className="h-5 w-5" aria-hidden="true" />
+              <X className="h-4 w-4" aria-hidden="true" />
             </button>
           </div>
 
-          <div className="relative flex-1 flex items-center justify-center bg-slate-950/95 px-3 py-4 sm:px-6 sm:py-6 overflow-hidden">
+          <div className="relative flex-1 flex items-center justify-center bg-slate-950/95 px-2 py-2 sm:px-4 sm:py-3 overflow-hidden">
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={currentPhoto}
@@ -119,7 +119,7 @@ export default function PhotoLightbox({
                   alt={`${projectName} site photo ${activeIndex + 1}`}
                   fill
                   className="object-contain"
-                  sizes="(max-width: 1280px) 100vw, 1280px"
+                  sizes="100vw"
                   priority
                 />
               </motion.div>
@@ -148,7 +148,7 @@ export default function PhotoLightbox({
             )}
           </div>
 
-          <div className="flex items-center justify-between gap-3 border-t border-slate-200/80 px-4 py-3 text-xs text-slate-500 sm:px-6 sm:text-sm">
+          <div className="flex items-center justify-between gap-3 border-t border-slate-200/80 px-4 py-2 text-xs text-slate-500 sm:px-6">
             <span className="hidden sm:inline">Use arrow keys to browse</span>
             {captions && captions[activeIndex] && (
               <span className="text-sm font-bold text-slate-900 mx-auto sm:mx-0">

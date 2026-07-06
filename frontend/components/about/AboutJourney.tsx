@@ -1,5 +1,23 @@
+import { Fragment, type ReactNode } from 'react';
 import ConstructionBg from '@/components/home/ConstructionBg';
 import { journeyTimeline } from '@/lib/about';
+
+const HIGHLIGHT_TERM = 'Larsen & Toubro (L&T)';
+
+function renderDescription(description: string): ReactNode {
+  if (!description.includes(HIGHLIGHT_TERM)) {
+    return description;
+  }
+
+  return description.split(HIGHLIGHT_TERM).map((part, index, parts) => (
+    <Fragment key={index}>
+      {part}
+      {index < parts.length - 1 && (
+        <span className="font-semibold text-brand-blue">{HIGHLIGHT_TERM}</span>
+      )}
+    </Fragment>
+  ));
+}
 
 function parseYearLabel(year: string) {
   const rangeMatch = year.match(/^(\d{4})\s*[–-]\s*(\d{4})$/);
@@ -69,7 +87,7 @@ export default function AboutJourney() {
                     {item.title}
                   </h3>
                   <p className="mt-2 text-sm font-light leading-relaxed text-slate-600 md:text-base">
-                    {item.description}
+                    {renderDescription(item.description)}
                   </p>
                 </article>
               </li>

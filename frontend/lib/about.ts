@@ -25,13 +25,13 @@ export const journeyTimeline = [
   },
   {
     year: '2003–2011',
-    title: 'Pakthavachalam Polytechnic (Self Financing College)',
+    title: 'Bakthavachalam Polytechnic (Self Financing College)',
     description:
-      'Led the construction of Pakthavachalam Polytechnic, a self-financing college, contributing to the development of a major educational institution.',
+      'Led the construction of Bakthavachalam Polytechnic, a self-financing college, contributing to the development of a major educational institution.',
   },
   {
     year: '50+',
-    title: 'Residential & Commercial Projects Across Tamil Nadu',
+    title: 'Residential & Commercial Projects',
     description:
       'Delivered 50+ residential and commercial projects across Tamil Nadu, building a reputation for reliability and craftsmanship.',
   },

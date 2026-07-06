@@ -15,6 +15,10 @@ export const images = {
     one: '/images/gallery-1.jpg',
     two: '/images/gallery-2.jpg',
   },
+  associations: {
+    bai: '/images/associations/bai.png',
+    kancea: '/images/associations/kancea.jpg',
+  },
   designStudio: {
     designOverview: designStudioMedia.designOverview,
     sketchupVideo: designStudioMedia.sketchupVideo,

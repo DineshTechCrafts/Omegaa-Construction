@@ -2,8 +2,8 @@ export const navItems = [
   { href: '/', label: 'Home' },
   { href: '/ongoing', label: 'Design Studio' },
   { href: '/completed', label: 'Completed Projects' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/about', label: 'About Us' },
+  { href: '/contact', label: 'Contact Us' },
 ] as const;
 
 export const statsItems = [

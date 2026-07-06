@@ -8,49 +8,49 @@ export const designStudioMedia = {
 export const omegaaVisualizationImages = [
   {
     src: '/design-studio/omegaa/hall-sketch.png',
-    alt: 'Hall SketchUp model drawing',
-    caption: 'Hall — 3D SketchUp Image',
+    alt: 'Living Room SketchUp model drawing',
+    caption: 'Living Room — 3D SketchUp Image',
   },
   {
     src: '/design-studio/omegaa/hall-render.png',
-    alt: 'Hall interior rendered visualization',
-    caption: 'Hall — 3D Rendered Image',
+    alt: 'Living Room interior rendered visualization',
+    caption: 'Living Room — 3D Rendered Image',
   },
   {
     src: '/design-studio/omegaa/02-bedroom-before-rendering.png',
-    alt: 'Bedroom before rendering',
-    caption: 'Bedroom — Before Rendering',
+    alt: 'Bedroom 3D SketchUp model drawing',
+    caption: 'Bedroom — 3D SketchUp Image',
   },
   {
     src: '/design-studio/omegaa/03-bedroom-after-rendering.png',
-    alt: 'Bedroom after rendering',
-    caption: 'Bedroom — After Rendering',
+    alt: 'Bedroom 3D rendered visualization',
+    caption: 'Bedroom — 3D Rendered Image',
   },
   {
     src: '/design-studio/omegaa/04-kitchen-dining-before-rendering.png',
-    alt: 'Kitchen and dining before rendering',
-    caption: 'Kitchen & Dining — Before Rendering',
+    alt: 'Kitchen and dining 3D SketchUp model drawing',
+    caption: 'Kitchen & Dining — 3D SketchUp Image',
   },
   {
     src: '/design-studio/omegaa/06-kitchen-dining-rendering-view.png',
-    alt: 'Kitchen and dining rendering view',
-    caption: 'Kitchen & Dining — Rendering View',
+    alt: 'Kitchen and dining 3D rendered visualization',
+    caption: 'Kitchen & Dining — 3D Rendered Image',
   },
   {
     src: '/design-studio/omegaa/05-kitchen-top-view-before-rendering.png',
-    alt: 'Kitchen top view before rendering',
-    caption: 'Kitchen — Top View Before Rendering',
+    alt: 'Kitchen top view 3D SketchUp model drawing',
+    caption: 'Kitchen Top View — 3D SketchUp Image',
   },
   {
     src: '/design-studio/omegaa/07-kitchen-dining-after-rendering.png',
-    alt: 'Kitchen and dining after rendering',
-    caption: 'Kitchen & Dining — After Rendering',
+    alt: 'Kitchen top view 3D rendered visualization',
+    caption: 'Kitchen Top View — 3D Rendered Image',
   },
 ] as const;
 
 export const visualizationPairs = [
   {
-    title: 'Hall',
+    title: 'Living Room',
     left: omegaaVisualizationImages[0],
     right: omegaaVisualizationImages[1],
   },

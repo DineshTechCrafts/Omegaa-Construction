@@ -12,6 +12,7 @@ frontend/.env.local
 
 # Build output
 backend/bin/
+frontend/tsconfig.tsbuildinfo
 
 # OS
 .DS_Store
