@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const siteConfig = {
   name: 'Omegaa Constructions',
-  tagline: 'An engineering and construction @ its best',
+  tagline: 'An Engineering and Construction @ its best',
   description:
     'Premium engineering and construction services with 30+ years of experience. Residential, commercial, and turnkey projects built on time with quality you can trust.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://omegaaconstructions.com',

@@ -3,6 +3,7 @@ import { designStudioMedia, omegaaVisualizationImages } from './design-studio';
 export const images = {
   logo: '/images/logo.png',
   hero: '/images/hero.jpg',
+  heroSlides: ['/images/hero.jpg', '/images/hero-2.jpg'] as const,
   map: '/images/map.png',
   completedProjectsHero: '/images/completed/hero/slide-1.jpg',
   completedProjectsHeroSlides: [

@@ -26,7 +26,7 @@ export function OnTimeDeliveryIcon({ className }: WhyChooseIconProps) {
   );
 }
 
-export function SketchUpVisualizationIcon({ className }: WhyChooseIconProps) {
+export function PremiumMaterialsIcon({ className }: WhyChooseIconProps) {
   return (
     <svg
       viewBox="0 0 48 48"
@@ -35,18 +35,28 @@ export function SketchUpVisualizationIcon({ className }: WhyChooseIconProps) {
       className={className}
       aria-hidden="true"
     >
+      {/* Shield shape */}
       <path
-        d="M24 8L40 18V34L24 44L8 34V18L24 8Z"
+        d="M24 6L8 13V26C8 34.5 15.5 41.5 24 44C32.5 41.5 40 34.5 40 26V13L24 6Z"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinejoin="round"
       />
-      <path d="M24 8V44" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M8 18L24 28L40 18" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M24 28V44" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2" />
-      <path d="M14 24L24 30L34 24" stroke="currentColor" strokeWidth="1" strokeDasharray="2 2" />
-      <circle cx="34" cy="12" r="2" stroke="currentColor" strokeWidth="1.2" />
-      <path d="M34 14V17" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      {/* Checkmark */}
+      <path
+        d="M16 24L21 29L32 18"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Star badge top-right */}
+      <path
+        d="M36 8l1 2.5L40 11l-2.5 1L36 14.5 35 12l-2.5-1 2.5-1z"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }

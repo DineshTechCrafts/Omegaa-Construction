@@ -4,7 +4,7 @@ import {
   CustomerCentricIcon,
   DurableConstructionIcon,
   OnTimeDeliveryIcon,
-  SketchUpVisualizationIcon,
+  PremiumMaterialsIcon,
   TransparentCostIcon,
 } from '@/components/home/WhyChooseIcons';
 
@@ -22,10 +22,10 @@ const whyChooseItems: WhyChooseItem[] = [
     icon: <OnTimeDeliveryIcon className="size-full text-gold transition-transform duration-300 group-hover:scale-110" />,
   },
   {
-    title: '3D SketchUp Visualization',
+    title: 'Premium Quality Materials',
     description:
-      'Visualize your dream home before construction begins with detailed 3D SketchUp models, helping you make confident design decisions.',
-    icon: <SketchUpVisualizationIcon className="size-full text-gold transition-transform duration-300 group-hover:scale-110" />,
+      'We use trusted brands and high-quality materials to ensure every structure is strong, durable, and built to last.',
+    icon: <PremiumMaterialsIcon className="size-full text-gold transition-transform duration-300 group-hover:scale-110" />,
   },
   {
     title: 'Reliable & Durable Construction',

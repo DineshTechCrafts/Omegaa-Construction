@@ -1,8 +1,9 @@
+import React from 'react';
 import MainHeader from '@/components/layout/MainHeader';
 import Footer from '@/components/layout/Footer';
 import ConstructionBg from '@/components/home/ConstructionBg';
+import HomeHeroCarousel from '@/components/home/HomeHeroCarousel';
 import WhyChooseOmegaa from '@/components/home/WhyChooseOmegaa';
-import Image from 'next/image';
 import { createPageMetadata, siteConfig } from '@/lib/seo';
 import { images } from '@/lib/images';
 
@@ -34,15 +35,17 @@ function SketchUpMarkIcon({ className }: { className?: string }) {
 }
 
 export default function HomePage() {
-  const services: {
+  type ServiceItem = {
     title: string;
     description: string;
     icon: React.ReactNode;
     logoIcon?: boolean;
-  }[] = [
+  };
+
+  const services: ServiceItem[] = [
     {
       title: 'Residential Construction',
-      description: 'Building quality homes designed around your lifestyle.',
+      description: 'We build quality homes designed around your lifestyle.',
       icon: (
         <svg className="size-full text-gold transition-transform duration-300 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -100,11 +103,7 @@ export default function HomePage() {
       <MainHeader />
 
       <main className="w-full">
-        <img
-          src={images.hero}
-          alt="Omegaa Constructions"
-          className="w-full h-auto block"
-        />
+        <HomeHeroCarousel images={images.heroSlides} />
       </main>
 
 
@@ -122,18 +121,16 @@ export default function HomePage() {
             <div className="w-24 h-1.5 bg-gold mx-auto mt-4 rounded-full" />
           </div>
 
-          <div className="flex flex-col relative space-y-12 md:space-y-0 py-8">
+          <div className="flex flex-col gap-6 py-8 md:gap-0">
             {services.map(({ title, description, icon, logoIcon }, i) => {
               const isLeft = i % 2 === 0;
               return (
                 <div
                   key={title}
-                  className={`relative w-full md:w-[62%] lg:w-[58%] flex items-center group ${
+                  className={`relative w-full md:w-[62%] lg:w-[58%] flex items-center group md:mb-10 lg:mb-12 ${
                     isLeft
                       ? 'mr-auto flex-row text-left justify-start'
                       : 'ml-auto flex-row-reverse text-right justify-start md:text-right'
-                  } ${
-                    i > 0 ? 'md:-mt-12 lg:-mt-16' : ''
                   }`}
                   style={{
                     zIndex: 10 + i,

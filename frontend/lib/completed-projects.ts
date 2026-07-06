@@ -504,19 +504,19 @@ export const completedProjects: CompletedProject[] = [
   },
   {
     slug: 'l-kanchipuram-mahesh',
-    name: 'L. Kanchipuram (Mahesh)',
+    name: 'Little Kanchipuram',
     summary:
       'A completed residential home delivered with quality workmanship, durable structure, and neat finishing.',
     coverImage: '/images/completed/l-kanchipuram-mahesh/2026-07-02_13-07-13.png',
     photos: projectPhotos('l-kanchipuram-mahesh', maheshHomePhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'L. Kanchipuram (Mahesh)',
+      'Little Kanchipuram',
       maheshHomePhotoFiles.length,
     ),
     youtubeVideo: {
       url: 'https://www.youtube.com/watch?v=kQhLTdgVfJg',
       description:
-        'Watch the L. Kanchipuram (Mahesh) project walkthrough on YouTube — a full video tour of the completed build.',
+        'Watch the Little Kanchipuram project walkthrough on YouTube — a full video tour of the completed build.',
     },
   },
   {
@@ -534,43 +534,55 @@ export const completedProjects: CompletedProject[] = [
   },
   {
     slug: 'l-kanchipuram-krishna',
-    name: 'L. Kanchipuram (Krishna Home)',
+    name: 'Little Kanchipuram',
     summary:
       'A completed residential home built with careful planning, quality materials, and refined finishing throughout.',
     coverImage: '/images/completed/l-kanchipuram-krishna/2026-06-30_12-39-57.png',
     photos: projectPhotos('l-kanchipuram-krishna', krishnaHomePhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'L. Kanchipuram (Krishna Home)',
+      'Little Kanchipuram',
       krishnaHomePhotoFiles.length,
     ),
     youtubeVideo: {
       url: 'https://www.youtube.com/watch?v=Vm2FW99qPMo',
       description:
-        'Watch the L. Kanchipuram (Krishna Home) project walkthrough on YouTube — a full video tour of the completed build.',
+        'Watch the Little Kanchipuram project walkthrough on YouTube — a full video tour of the completed build.',
     },
   },
   {
     slug: 'bakthavachalam-polytechnic',
-    name: 'Bakthavachalam Polytechnic (Self Financing College)',
+    name: 'Manavanakalai Mandram',
     summary:
       'A completed educational institution project showcasing quality civil work, clean execution, and dependable structural delivery.',
     coverImage:
       '/images/completed/bakthavachalam-polytechnic/83MANAVALAKAlai.jpg',
     photos: projectPhotos('bakthavachalam-polytechnic', mvmSitePhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Bakthavachalam Polytechnic',
+      'Manavanakalai Mandram',
       mvmSitePhotoFiles.length,
     ),
   },
   {
-    slug: 'mahindra-mahindra',
-    name: 'Mahindra & Mahindra',
+    slug: 'bpt',
+    name: 'Bakthavachalam Polytechnic (Self-Financing College)',
     summary:
-      'A completed Mahindra & Mahindra site project delivered with engineering precision and robust construction standards.',
+      'A completed institutional construction project delivering structural strength, clean execution, and lasting quality.',
+    coverImage: '/images/completed/bpt/img1.jpg',
+    photos: projectPhotos('bpt', bptPhotoFiles),
+    slideDescriptions: placeholderSlideDescriptions(
+      'Bakthavachalam Polytechnic',
+      bptPhotoFiles.length,
+    ),
+  },
+  {
+    slug: 'mahindra-mahindra',
+    name: 'Mahindra & Mahindra Testing Track',
+    summary:
+      'A completed Mahindra & Mahindra vehicle testing track project delivered with engineering precision and robust construction standards.',
     coverImage: '/images/completed/mahindra-mahindra/20181006_180316.jpg',
     photos: projectPhotos('mahindra-mahindra', ltPhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Mahindra & Mahindra',
+      'Mahindra & Mahindra Testing Track',
       ltPhotoFiles.length,
     ),
   },
@@ -588,13 +600,13 @@ export const completedProjects: CompletedProject[] = [
   },
   {
     slug: 'duplex-m-nagar',
-    name: 'Duplex M Nagar',
+    name: 'Meenakshi Nagar Duplex',
     summary:
       'A completed duplex residence built with thoughtful planning, durable structure, and refined finishing.',
     coverImage: '/images/completed/duplex-m-nagar/20170913_162058.jpg',
     photos: projectPhotos('duplex-m-nagar', duplexMNagarPhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Duplex M Nagar',
+      'Meenakshi Nagar Duplex',
       duplexMNagarPhotoFiles.length,
     ),
   },
@@ -624,6 +636,18 @@ export const completedProjects: CompletedProject[] = [
     slideDescriptions: placeholderSlideDescriptions(
       'NGO Nagar',
       sundarFlatPhotoFiles.length,
+    ),
+  },
+  {
+    slug: 'orikkai-site',
+    name: 'Orikkai Site, Kanchipuram',
+    summary:
+      'A completed residential project built to client requirements with strong craftsmanship throughout.',
+    coverImage: '/images/completed/s-manigandan/20180122_071537.jpg',
+    photos: projectPhotos('s-manigandan', sManigandanPhotoFiles),
+    slideDescriptions: placeholderSlideDescriptions(
+      'Orikkai Site, Kanchipuram',
+      sManigandanPhotoFiles.length,
     ),
   },
 ];
