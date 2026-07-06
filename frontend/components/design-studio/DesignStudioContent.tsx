@@ -8,6 +8,7 @@ import Footer from '@/components/layout/Footer';
 import FadeIn from '@/components/ui/FadeIn';
 import ConstructionBg from '@/components/home/ConstructionBg';
 import SketchupVideoPlayer from '@/components/design-studio/SketchupVideoPlayer';
+import SpecificationViewer from '@/components/design-studio/SpecificationViewer';
 import { designStudioSections } from '@/lib/design-studio';
 import PhotoLightbox from '@/components/completed/PhotoLightbox';
 
@@ -240,6 +241,19 @@ export default function DesignStudioContent() {
                   </article>
                 </FadeIn>
               ))}
+
+              <FadeIn>
+                <article className="overflow-hidden rounded-3xl border border-slate-200/80 bg-white/95 shadow-[0_12px_40px_rgba(15,23,42,0.06)] backdrop-blur-sm">
+                  <div className="border-b border-slate-100 px-5 py-4 md:px-8 md:py-5">
+                    <h2 className="text-xl font-bold text-slate-900 md:text-2xl">
+                      Omegaa Construction Specification
+                    </h2>
+                  </div>
+                  <div className="p-4 sm:p-6 md:p-8">
+                    <SpecificationViewer />
+                  </div>
+                </article>
+              </FadeIn>
             </div>
           </div>
         </section>

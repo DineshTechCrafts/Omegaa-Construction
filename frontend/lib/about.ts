@@ -8,6 +8,8 @@ export const founder = {
   },
   philosophy:
     'With over three decades in the construction industry, Mr. Sivakumar V K has built Omegaa Construction on a simple belief—that every structure must reflect uncompromising quality, honest workmanship, and a deep commitment to the clients who trust us with their vision.',
+  philosophySecondary:
+    'We deliver 2D floor plans and 3D SketchUp designs that help you visualize every detail before construction begins.',
 } as const;
 
 export const journeyTimeline = [

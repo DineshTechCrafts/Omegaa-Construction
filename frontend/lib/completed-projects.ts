@@ -487,19 +487,19 @@ export const completedProjectsBanner = completedProjectsHeroSlides[0];
 export const completedProjects: CompletedProject[] = [
   {
     slug: 'vaiyavoor-site',
-    name: 'Vaiyavoor Site',
+    name: 'Vaiyavoor Site, Kanchipuram',
     summary:
       'A completed residential home built with quality craftsmanship, thoughtful design, and lasting structural strength.',
     coverImage: '/images/completed/vaiyavoor-site/2026-06-28_18-51-47.png',
     photos: projectPhotos('vaiyavoor-site', paHomePhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Vaiyavoor Site',
+      'Vaiyavoor Site, Kanchipuram',
       paHomePhotoFiles.length,
     ),
     youtubeVideo: {
       url: 'https://www.youtube.com/watch?v=fva1_CbOxH4',
       description:
-        'Watch the Vaiyavoor Site project walkthrough on YouTube — a full video tour of the completed build.',
+        'Watch the Vaiyavoor Site, Kanchipuram project walkthrough on YouTube — a full video tour of the completed build.',
     },
   },
   {
@@ -551,68 +551,68 @@ export const completedProjects: CompletedProject[] = [
   },
   {
     slug: 'bakthavachalam-polytechnic',
-    name: 'Manavanakalai Mandram',
+    name: 'Manavalakalai Mandram, Kanchipuram',
     summary:
       'A completed educational institution project showcasing quality civil work, clean execution, and dependable structural delivery.',
     coverImage:
       '/images/completed/bakthavachalam-polytechnic/83MANAVALAKAlai.jpg',
     photos: projectPhotos('bakthavachalam-polytechnic', mvmSitePhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Manavanakalai Mandram',
+      'Manavalakalai Mandram, Kanchipuram',
       mvmSitePhotoFiles.length,
     ),
   },
   {
     slug: 'bpt',
-    name: 'Bakthavachalam Polytechnic (Self-Financing College)',
+    name: 'Bakthavachalam Polytechnic (Self-Financing College), Kanchipuram',
     summary:
       'A completed institutional construction project delivering structural strength, clean execution, and lasting quality.',
     coverImage: '/images/completed/bpt/img1.jpg',
     photos: projectPhotos('bpt', bptPhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Bakthavachalam Polytechnic',
+      'Bakthavachalam Polytechnic (Self-Financing College), Kanchipuram',
       bptPhotoFiles.length,
     ),
   },
   {
     slug: 'mahindra-mahindra',
-    name: 'Mahindra & Mahindra Testing Track',
+    name: 'Mahindra & Mahindra Testing Track SIPCOT',
     summary:
       'A completed Mahindra & Mahindra vehicle testing track project delivered with engineering precision and robust construction standards.',
     coverImage: '/images/completed/mahindra-mahindra/20181006_180316.jpg',
     photos: projectPhotos('mahindra-mahindra', ltPhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Mahindra & Mahindra Testing Track',
+      'Mahindra & Mahindra Testing Track SIPCOT',
       ltPhotoFiles.length,
     ),
   },
   {
     slug: 'revathi-nagar',
-    name: 'Revathi Nagar',
+    name: 'Revathi Nagar, Kanchipuram',
     summary:
       'A completed home construction project combining functional design with lasting build quality.',
     coverImage: '/images/completed/revathi-nagar/DSCN1259.JPG',
     photos: projectPhotos('revathi-nagar', sriHomePhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Revathi Nagar',
+      'Revathi Nagar, Kanchipuram',
       sriHomePhotoFiles.length,
     ),
   },
   {
     slug: 'duplex-m-nagar',
-    name: 'Meenakshi Nagar Duplex',
+    name: 'Meenakshi Nagar, Duplex',
     summary:
       'A completed duplex residence built with thoughtful planning, durable structure, and refined finishing.',
     coverImage: '/images/completed/duplex-m-nagar/20170913_162058.jpg',
     photos: projectPhotos('duplex-m-nagar', duplexMNagarPhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'Meenakshi Nagar Duplex',
+      'Meenakshi Nagar, Duplex',
       duplexMNagarPhotoFiles.length,
     ),
   },
   {
     slug: 'vedachalam-nagar-extn',
-    name: 'Vedachalam Nagar (Extn)',
+    name: 'Vedhachalam Nagar (Extn), Kanchipuram',
     summary:
       'A completed residential construction project delivered with quality materials and precise execution.',
     coverImage: '/images/completed/vedachalam-nagar-extn/Dr.Gnanaganesh.jpg',
@@ -628,13 +628,13 @@ export const completedProjects: CompletedProject[] = [
   },
   {
     slug: 'ngo-nagar',
-    name: 'NGO Nagar',
+    name: 'NGO Nagar, Kanchipuram',
     summary:
       'A completed flat project with efficient space planning, neat finishes, and on-site quality control.',
     coverImage: '/images/completed/ngo-nagar/20170703_174323.jpg',
     photos: projectPhotos('ngo-nagar', sundarFlatPhotoFiles),
     slideDescriptions: placeholderSlideDescriptions(
-      'NGO Nagar',
+      'NGO Nagar, Kanchipuram',
       sundarFlatPhotoFiles.length,
     ),
   },

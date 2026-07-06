@@ -1,11 +1,26 @@
 import Image from 'next/image';
+import { Fragment } from 'react';
 import { Award, Calendar, Quote } from 'lucide-react';
 import { founder } from '@/lib/about';
+
+function renderPhilosophyWithFounderName(text: string) {
+  const parts = text.split(founder.name);
+  if (parts.length === 1) return text;
+
+  return parts.map((part, index) => (
+    <Fragment key={index}>
+      {part}
+      {index < parts.length - 1 && (
+        <span className="whitespace-nowrap">{founder.name}</span>
+      )}
+    </Fragment>
+  ));
+}
 
 export default function AboutFounder() {
   return (
     <section className="relative w-full bg-white px-4 py-16 md:px-8 md:py-24 lg:px-16">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
           Our Founder
         </h2>
@@ -32,7 +47,7 @@ export default function AboutFounder() {
               </div>
               <div className="bg-white px-5 py-4 md:px-6 md:py-5 border-t border-slate-100">
                 <p className="whitespace-nowrap text-lg font-semibold text-slate-900">{founder.name}</p>
-                <p className="mt-1 text-sm font-light text-slate-500">
+                <p className="mt-1 whitespace-nowrap text-sm font-light text-slate-500">
                   Founder, Omegaa Construction
                 </p>
               </div>
@@ -60,7 +75,10 @@ export default function AboutFounder() {
               </div>
 
               <p className="relative text-justify text-base font-light leading-relaxed text-slate-700 md:text-lg md:leading-relaxed">
-                {founder.philosophy}
+                {renderPhilosophyWithFounderName(founder.philosophy)}
+              </p>
+              <p className="relative mt-4 text-justify text-base font-light leading-relaxed text-slate-700 md:text-lg md:leading-relaxed">
+                {founder.philosophySecondary}
               </p>
             </div>
           </div>
