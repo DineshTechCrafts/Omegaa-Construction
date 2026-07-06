@@ -34,7 +34,12 @@ function SketchUpMarkIcon({ className }: { className?: string }) {
 }
 
 export default function HomePage() {
-  const services = [
+  const services: {
+    title: string;
+    description: string;
+    icon: React.ReactNode;
+    logoIcon?: boolean;
+  }[] = [
     {
       title: 'Residential Construction',
       description: 'Building quality homes designed around your lifestyle.',

@@ -8,6 +8,7 @@ import { createPortal } from 'react-dom';
 
 type PhotoLightboxProps = {
   photos: string[];
+  captions?: string[];
   activeIndex: number;
   projectName: string;
   onClose: () => void;
@@ -16,6 +17,7 @@ type PhotoLightboxProps = {
 
 export default function PhotoLightbox({
   photos,
+  captions,
   activeIndex,
   projectName,
   onClose,
@@ -80,7 +82,7 @@ export default function PhotoLightbox({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.96, y: 8 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
-          className="relative flex w-full max-w-5xl flex-col overflow-hidden rounded-3xl border border-white/10 bg-white shadow-[0_24px_80px_rgba(0,0,0,0.45)]"
+          className="relative flex w-full max-w-5xl md:max-w-6xl lg:max-w-7xl h-[80vh] sm:h-[85vh] flex-col overflow-hidden rounded-3xl border border-white/10 bg-white shadow-[0_24px_80px_rgba(0,0,0,0.45)]"
           onClick={(event) => event.stopPropagation()}
         >
           <div className="flex items-center justify-between gap-4 border-b border-slate-200/80 px-4 py-3 sm:px-6 sm:py-4">
@@ -102,7 +104,7 @@ export default function PhotoLightbox({
             </button>
           </div>
 
-          <div className="relative flex min-h-[240px] items-center justify-center bg-slate-950/95 px-3 py-4 sm:min-h-[420px] sm:px-6 sm:py-8">
+          <div className="relative flex-1 flex items-center justify-center bg-slate-950/95 px-3 py-4 sm:px-6 sm:py-6 overflow-hidden">
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={currentPhoto}
@@ -110,14 +112,14 @@ export default function PhotoLightbox({
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -24 }}
                 transition={{ duration: 0.22, ease: 'easeOut' }}
-                className="relative h-[50vh] w-full max-h-[70vh] sm:h-[60vh]"
+                className="relative h-full w-full"
               >
                 <Image
                   src={currentPhoto}
                   alt={`${projectName} site photo ${activeIndex + 1}`}
                   fill
                   className="object-contain"
-                  sizes="(max-width: 1024px) 100vw, 1024px"
+                  sizes="(max-width: 1280px) 100vw, 1280px"
                   priority
                 />
               </motion.div>
@@ -147,7 +149,12 @@ export default function PhotoLightbox({
           </div>
 
           <div className="flex items-center justify-between gap-3 border-t border-slate-200/80 px-4 py-3 text-xs text-slate-500 sm:px-6 sm:text-sm">
-            <span>Use arrow keys to browse</span>
+            <span className="hidden sm:inline">Use arrow keys to browse</span>
+            {captions && captions[activeIndex] && (
+              <span className="text-sm font-bold text-slate-900 mx-auto sm:mx-0">
+                {captions[activeIndex]}
+              </span>
+            )}
             <span className="font-medium text-slate-700">
               {activeIndex + 1} / {photos.length}
             </span>

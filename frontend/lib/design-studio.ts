@@ -7,19 +7,14 @@ export const designStudioMedia = {
 
 export const omegaaVisualizationImages = [
   {
-    src: designStudioMedia.sketchupImage,
-    alt: '3D SketchUp model preview',
-    caption: '3D SketchUp Image',
+    src: '/design-studio/omegaa/hall-sketch.png',
+    alt: 'Hall SketchUp model drawing',
+    caption: 'Hall — 3D SketchUp Image',
   },
   {
-    src: designStudioMedia.renderedImage,
-    alt: '3D rendered architectural visualization',
-    caption: '3D Rendered Image',
-  },
-  {
-    src: '/design-studio/omegaa/01-hall.png',
-    alt: 'Hall interior visualization',
-    caption: 'Hall',
+    src: '/design-studio/omegaa/hall-render.png',
+    alt: 'Hall interior rendered visualization',
+    caption: 'Hall — 3D Rendered Image',
   },
   {
     src: '/design-studio/omegaa/02-bedroom-before-rendering.png',
@@ -37,19 +32,42 @@ export const omegaaVisualizationImages = [
     caption: 'Kitchen & Dining — Before Rendering',
   },
   {
-    src: '/design-studio/omegaa/05-kitchen-top-view-before-rendering.png',
-    alt: 'Kitchen top view before rendering',
-    caption: 'Kitchen — Top View Before Rendering',
-  },
-  {
     src: '/design-studio/omegaa/06-kitchen-dining-rendering-view.png',
     alt: 'Kitchen and dining rendering view',
     caption: 'Kitchen & Dining — Rendering View',
   },
   {
+    src: '/design-studio/omegaa/05-kitchen-top-view-before-rendering.png',
+    alt: 'Kitchen top view before rendering',
+    caption: 'Kitchen — Top View Before Rendering',
+  },
+  {
     src: '/design-studio/omegaa/07-kitchen-dining-after-rendering.png',
     alt: 'Kitchen and dining after rendering',
     caption: 'Kitchen & Dining — After Rendering',
+  },
+] as const;
+
+export const visualizationPairs = [
+  {
+    title: 'Hall',
+    left: omegaaVisualizationImages[0],
+    right: omegaaVisualizationImages[1],
+  },
+  {
+    title: 'Bedroom',
+    left: omegaaVisualizationImages[2],
+    right: omegaaVisualizationImages[3],
+  },
+  {
+    title: 'Kitchen View One',
+    left: omegaaVisualizationImages[4],
+    right: omegaaVisualizationImages[5],
+  },
+  {
+    title: 'Kitchen View Two',
+    left: omegaaVisualizationImages[6],
+    right: omegaaVisualizationImages[7],
   },
 ] as const;
 
@@ -73,11 +91,7 @@ type DesignStudioGallerySection = {
   id: string;
   heading: string;
   type: 'gallery';
-  images: readonly {
-    src: string;
-    alt: string;
-    caption: string;
-  }[];
+  pairs: typeof visualizationPairs;
 };
 
 export type DesignStudioSection =
@@ -92,7 +106,7 @@ export const designStudioSections: DesignStudioSection[] = [
     type: 'image',
     src: designStudioMedia.designOverview,
     alt: 'Design studio overview from project PDF',
-    aspectClass: 'aspect-[3/2]',
+    aspectClass: 'aspect-[3/1]',
   },
   {
     id: 'sketchup-video',
@@ -104,6 +118,6 @@ export const designStudioSections: DesignStudioSection[] = [
     id: 'omegaa-visualizations',
     heading: 'Design Visualizations',
     type: 'gallery',
-    images: omegaaVisualizationImages,
+    pairs: visualizationPairs,
   },
 ];

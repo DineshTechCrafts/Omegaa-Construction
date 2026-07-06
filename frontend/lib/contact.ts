@@ -23,6 +23,6 @@ export const contactChannels = {
   ] satisfies ContactPhone[],
   whatsapp: {
     display: '+91 91235 79767',
-    href: 'https://wa.me/919123579767',
+    href: 'https://wa.me/919123579767?text=Hi%21%20I%20am%20interested%20in%20Omegaa%20Construction.%20I%20would%20like%20to%20inquire%20about%20your%20services.',
   },
 } as const;

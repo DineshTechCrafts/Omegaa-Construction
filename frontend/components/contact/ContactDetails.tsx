@@ -53,25 +53,24 @@ function ChannelCard({ href, label, icon, children, external }: ChannelCardProps
 
 function PhoneCard() {
   return (
-    <div className="group font-sans rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-blue/25 hover:shadow-[0_10px_30px_rgba(21,46,255,0.08)] md:p-6">
-      <div className="flex items-start gap-4">
+    <div className="group font-sans rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm transition-all duration-300 hover:border-brand-blue/25 hover:shadow-[0_10px_30px_rgba(21,46,255,0.08)] md:p-6">
+      <div className="flex items-center gap-4">
         <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-brand-blue/10 bg-brand-blue/10 text-brand-blue transition-colors group-hover:bg-brand-blue group-hover:text-white">
           <Phone className="h-5 w-5" aria-hidden="true" />
         </span>
-        <div className="min-w-0 flex-1">
-          <span className={`block ${contactLabelClass}`}>Phone</span>
-          <div className="mt-3 flex flex-col gap-3 md:gap-4">
-            {contactChannels.phones.map((phone) => (
-              <a
-                key={phone.href}
-                href={phone.href}
-                className={`block whitespace-nowrap rounded-lg border border-transparent px-3 py-2 hover:border-brand-blue/15 hover:bg-brand-blue/5 hover:text-brand-blue ${contactValueClass}`}
-              >
-                {phone.display}
-              </a>
-            ))}
-          </div>
-        </div>
+        <span className={contactLabelClass}>Phone</span>
+      </div>
+      <div className="mt-4 flex flex-wrap gap-3">
+        {contactChannels.phones.map((phone) => (
+          <a
+            key={phone.href}
+            href={phone.href}
+            className={`inline-flex items-center gap-2 rounded-xl border border-slate-100 bg-slate-50/50 hover:bg-brand-blue/5 hover:border-brand-blue/20 hover:text-brand-blue px-4 py-2.5 transition-all duration-200 ${contactValueClass}`}
+          >
+            <Phone className="h-4 w-4 text-slate-400" />
+            {phone.display}
+          </a>
+        ))}
       </div>
     </div>
   );
