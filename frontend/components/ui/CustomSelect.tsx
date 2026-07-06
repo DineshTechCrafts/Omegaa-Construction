@@ -101,6 +101,7 @@ export default function CustomSelect({
       <button
         id={selectId}
         type="button"
+        role="combobox"
         className={`${triggerClass} ${invalid ? 'border-red-400' : ''}`}
         aria-haspopup="listbox"
         aria-expanded={open}
