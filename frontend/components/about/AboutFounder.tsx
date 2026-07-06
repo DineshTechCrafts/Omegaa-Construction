@@ -17,13 +17,13 @@ export default function AboutFounder() {
           <div className="flex flex-col md:flex-row">
             {/* Photo — 35% */}
             <div className="flex w-full shrink-0 flex-col border-b border-slate-200/80 md:w-[35%] md:border-b-0 md:border-r">
-              <div className="relative min-h-[280px] flex-1 bg-slate-100 md:min-h-[420px]">
+              <div className="relative min-h-[280px] flex-1 bg-white md:min-h-[420px]">
                 <Image
                   src={founder.photo.src}
                   alt={founder.photo.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 35vw"
-                  className="object-cover"
+                  className="object-contain"
                 />
                 <div
                   className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/25"

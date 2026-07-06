@@ -3,7 +3,7 @@ export const founder = {
   foundedYear: 1996,
   experience: '30+ years',
   photo: {
-    src: '/images/about/founder.jpg',
+    src: '/images/about/founder.jpeg',
     alt: 'Founder of Omegaa Construction',
   },
   philosophy:
