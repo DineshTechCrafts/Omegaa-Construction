@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# Environment
+.env
+.env.local
+.env*.local
+frontend/.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE (keep .cursorrules; ignore local editor state)
+.vscode/
+.idea/
+
+# Build artifacts
+backend/bin/
