@@ -15,14 +15,14 @@ export default function AboutFounder() {
           <div className="absolute left-0 top-0 z-10 h-full w-1.5 bg-gold" aria-hidden="true" />
 
           <div className="flex flex-col md:flex-row">
-            {/* Photo — 35% */}
-            <div className="flex w-full shrink-0 flex-col border-b border-slate-200/80 md:w-[35%] md:border-b-0 md:border-r">
-              <div className="relative min-h-[280px] flex-1 bg-white md:min-h-[420px]">
+            {/* Photo — 45% */}
+            <div className="flex w-full shrink-0 flex-col border-b border-slate-200/80 md:w-[45%] md:border-b-0 md:border-r">
+              <div className="relative aspect-[4/3] w-full bg-slate-50/50">
                 <Image
                   src={founder.photo.src}
                   alt={founder.photo.alt}
                   fill
-                  sizes="(max-width: 768px) 100vw, 35vw"
+                  sizes="(max-width: 768px) 100vw, 45vw"
                   className="object-contain"
                 />
                 <div
@@ -30,7 +30,7 @@ export default function AboutFounder() {
                   aria-hidden="true"
                 />
               </div>
-              <div className="bg-white px-5 py-4 md:px-6 md:py-5">
+              <div className="bg-white px-5 py-4 md:px-6 md:py-5 border-t border-slate-100">
                 <p className="text-lg font-semibold text-slate-900">{founder.name}</p>
                 <p className="mt-1 text-sm font-light text-slate-500">
                   Founder, Omegaa Construction
@@ -38,8 +38,8 @@ export default function AboutFounder() {
               </div>
             </div>
 
-            {/* Description — 65% */}
-            <div className="relative w-full bg-slate-50 px-6 py-8 md:w-[65%] md:px-10 md:py-10">
+            {/* Description — 55% */}
+            <div className="relative w-full bg-slate-50 px-6 py-8 md:w-[55%] md:px-10 md:py-10 flex flex-col justify-center">
               <Quote
                 className="absolute right-5 top-5 h-14 w-14 text-brand-blue/10 md:right-8 md:top-8 md:h-20 md:w-20"
                 aria-hidden="true"
